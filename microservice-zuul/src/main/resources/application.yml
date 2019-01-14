@@ -1,0 +1,24 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: microservice-zuul
+zuul:
+  ignored-services: microservice-provider  #如果要忽略多个的话，可以使用 "*"代替
+  routes:
+    dept.serviceId: microservice-provider
+    dept.path: /dept/**    #设置使用dept代替microservice-provider
+  prefix: /prefix  #设置同意的前缀
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaa.com:7011/eureka/,http://eurekab.com:7012/eureka/,http://eurekac.com:7013/eureka/
+  instance:
+    instance-id: myzuul.com
+    prefer-ip-address: true
+info:
+  app.name: myzuul
+  company.name: www.myzuul.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

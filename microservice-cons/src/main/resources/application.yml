@@ -1,0 +1,7 @@
+server:
+  port: 88
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eurekaa.com:7011/eureka/,http://eurekab.com:7012/eureka/,http://eurekac.com:7013/eureka/
