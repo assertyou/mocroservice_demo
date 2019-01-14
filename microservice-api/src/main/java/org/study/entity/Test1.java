@@ -2,9 +2,8 @@ package org.study.entity;
 
 /**
  * @author Kai.Chi
- * @date 2019/1/14 18:48
+ * @date 2019/1/14 19:06
  * @description:
- *Test
  */
-public class Test {
+public class Test1 {
 }
