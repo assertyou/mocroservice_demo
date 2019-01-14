@@ -6,6 +6,7 @@ package org.study.entity;
  * @description:
  * 测试git分支
  * 在这里做一些修改
+ *Test
  */
 public class Test {
 }
